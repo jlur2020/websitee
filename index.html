@@ -1,4 +1,4 @@
-		<!DOCTYPE html>
+			<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 	<head>
 		<!-- Mobile Specific Meta -->
@@ -41,14 +41,14 @@
 							<div class="logo">
 								<a href="#home"><img src="img/logo.png" alt=""></a>
 							</div>
-							<button type="button" class="btn btn-sm btn-warning pull-right" data-toggle="modal" data-target="#myModal">Prayer Request</button>
+							<!--<button type="button" class="btn btn-sm btn-warning pull-right" data-toggle="modal" data-target="#myModal">Prayer Request</button>-->
 							<div class="main-menubar d-flex align-items-center">
 								
-								<nav class="hide">
+								<nav>
 									<a href="#home">Home</a>
-									<!--<a href="#feature">Feature</a>-->
+									<a href="#feature">Feature</a>
 									<a href="#about">About</a>
-									<a href="#contact">Contact</a>
+									<a class="btn btn-sm btn-warning" href="#contact">Prayer Request</a>
 								</nav>
 								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
 							</div>
@@ -120,7 +120,7 @@
 							  </div>
 						</div>-->
 						<div class="col-lg-12 col-sm-12 no-padding single-img">
-							  <img src="img/Friend.jpg" class="image img-fluid">
+							  <img src="https://radio.securenetsystems.net/images/webapp/listen-live-en1.png" class="image img-fluid">
 							  <div class="middle2">
 							  	<a href="https://radio.securenetsystems.net/cwa/JESUSLOVESYOU" target="_blank" class="play-btn">
 							  		<img class="vdo-icon" src="https://radio.securenetsystems.net/images/webapp/listen-live-en1.png" alt="">
@@ -146,7 +146,7 @@
 			<!-- End feature Area -->
 
 			<!-- Start service Area -->
-			<section class="service-area pt-100 pb-100" data-parallax="scroll" data-image-src="img/service-bg.jpg">
+			<!--<section class="service-area pt-100 pb-100" data-parallax="scroll" data-image-src="img/service-bg.jpg">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6">
@@ -186,15 +186,17 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section>-->
 			<!-- End service Area -->
 
-			<!-- Start member Area -->
-			<section class="member-area relative pt-100 pb-100">
+			<!-- Start ******About us ********member Area -->
+			<section class="member-area relative pt-100 pb-100" id="about">
 				<div class="overlay overlay-bg"></div>
 				<div class="container relative">
 					<div class="row justify-content-center">
+					<!--<h3 style="float:left">Aboutus</h3>-->
 						<div class="active-member-carousel">
+							
 							<div class="single-member item">
 									<div class="member-info d-flex flex-row justify-content-center">
 										<img class="" style="width:100px;height: 100%;" src="img/m1.jpg" alt="">
@@ -231,7 +233,7 @@
 			<!-- End member Area -->
 
 			<!-- Start About Area -->
-			<section class="about-area" id="about">
+			<!--<section class="about-area" id="about">
 				<div class="container-fluid">
 					<div class="row  d-flex justify-content-start align-items-center">
 						<div class="col-lg-6 col-md-12 no-padding">
@@ -249,7 +251,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section>-->
 			<!-- End About Area -->
 
 			<!-- Start contact Area -->
@@ -267,19 +269,20 @@
 							</p>
 						</div>
 						<div class="col-lg-8">
-								<form id="myForm" action="mail.php" method="post" class="contact-form">
+								<form class="contact-form" id="contact-form" name="contact-form" action="https://sheetdb.io/api/v1/oyhz2leuqxfmt" method="POST" >
 									<div class="row justify-content-center">
 										<div class="col-lg-6">
-											<input name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-20" required="" type="text">
+											<input id="full_name" name="data[full_name]"  placeholder="Enter your Fullname" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your Fullname'" class="common-input mt-20" required="" type="text">
 
-											<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-20" required="" type="email">
+											<input id="email" name="data[email]"  placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-20" required="" type="email">
 
-											<input name="phone" placeholder="Enter phone number"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter phone number'" class="common-input mt-20" required="" type="tel">
+											<input id="contactno" name="data[contactno]" placeholder="Enter phone number"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter phone number'" class="common-input mt-20" required="" type="tel">
 										</div>
 										<div class="col-lg-6">
 											<textarea class="common-textarea mt-20" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-
-											<button class="primary-btn d-inline-flex align-items-center mt-20"><span class="mr-10">Send Message</span><span class="lnr lnr-arrow-right"></span></button> <br>
+											
+											<button class="primary-btn d-inline-flex align-items-center mt-20" onclick="document.getElementById('contact-form').submit();"><span class="mr-10">Send Message</span><span class="lnr lnr-arrow-right"></span></button> <br>
+											
 											<div class="alert-msg"></div>
 										</div>
 									</div>
