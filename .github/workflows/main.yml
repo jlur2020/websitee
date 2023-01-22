@@ -17,5 +17,5 @@ jobs:
         server: ftp.jesuslovesyouradio.org
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /home/wzmymxldx8m7/
+        server-dir: /home/wzmymxldx8m7/public_html/jesuslovesyouradio.org/admin
         port: 21
