@@ -27,7 +27,7 @@ inputs:
     required: false
 runs:
   using: "node16"
-  main: "dist/index.js"
+  main: "index.html"
 branding:
   icon: "upload-cloud"
   color: "green"
