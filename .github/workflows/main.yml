@@ -17,5 +17,5 @@ jobs:
         server: 208.109.16.231
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server-dir: /home/wzmymxldx8m7/
+        server-dir: /
         port: 21
